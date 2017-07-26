@@ -6,6 +6,7 @@ use Drupal\Core\Form\FormStateInterface;
 use Drupal\Core\StringTranslation\StringTranslationTrait;
 use Drupal\rules\Core\RulesActionManagerInterface;
 use Drupal\rules\Engine\ActionExpressionInterface;
+use Drupal\rules\Form\ContextFormTrait;
 use Drupal\rules\Ui\RulesUiHandlerTrait;
 
 /**
@@ -13,7 +14,6 @@ use Drupal\rules\Ui\RulesUiHandlerTrait;
  */
 class ActionForm implements ExpressionFormInterface {
 
-  use ContextFormTrait;
   use StringTranslationTrait;
   use RulesUiHandlerTrait;
 

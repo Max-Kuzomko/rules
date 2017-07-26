@@ -1,10 +1,10 @@
 <?php
 
-namespace Drupal\rules\Form\Expression;
+namespace Drupal\rules\Form;
 
 use Drupal\Core\Form\FormStateInterface;
 use Drupal\rules\Context\ContextConfig;
-use Drupal\Core\Plugin\Context\ContextDefinitionInterface;
+use Drupal\rules\Context\ContextDefinition;
 use Drupal\rules\Context\DataProcessorManagerTrait;
 
 /**

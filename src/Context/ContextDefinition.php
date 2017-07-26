@@ -117,4 +117,23 @@ class ContextDefinition extends ContextDefinitionCore implements ContextDefiniti
     return $this;
   }
 
+  /**
+   * {@inheritdoc}
+   */
+  public function getWidgetId() {
+    $widget_id =  strtr($this->getDataType(), array(
+      'any' => 'text_input',
+      'any' => 'textarea',
+      'any' => 'select',
+    ));
+    return $widget_id ? $widget_id : 'default_widget';
+  }
+
+  /**
+   * {@inheritdoc}
+   */
+  public function getWidgetSettings() {
+
+  }
+
 }

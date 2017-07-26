@@ -68,4 +68,14 @@ interface ContextDefinitionInterface extends ContextDefinitionInterfaceCore {
    */
   public function toArray();
 
+  /**
+   * @todo Doc
+   */
+  public function getWidgetId();
+
+  /**
+   * @todo Doc
+   */
+  public function getWidgetSettings();
+
 }
