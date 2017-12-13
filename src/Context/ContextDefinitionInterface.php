@@ -69,12 +69,19 @@ interface ContextDefinitionInterface extends ContextDefinitionInterfaceCore {
   public function toArray();
 
   /**
-   * @todo Doc
+   * Gets default widget id.
+   *
+   * @return string|null
+   *   A string with the widget id or nothing if the data type needed by
+   *   the context is not supported by any widget.
    */
   public function getWidgetId();
 
   /**
-   * @todo Doc
+   * Gets default configuration of the widget.
+   *
+   * @return array
+   *   An associative array with the default configuration.
    */
   public function getWidgetSettings();
 
